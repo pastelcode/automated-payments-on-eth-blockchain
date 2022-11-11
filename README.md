@@ -7,3 +7,7 @@ The application deals with the following: A dapp that allows to distribute payme
 ## Try it out!
 
 1. `yarn` (to install all dependencies)
+2. Open a new terminal window/tab
+3. `npx hardhat node` to start a HTTP and WebSocket JSON-RPC server
+4. Go back to the first terminal
+5. `npx hardhat run --network localhost scripts/deploy.ts`
