@@ -71,7 +71,7 @@ contract Time is Ownable, Stage {
     ) public onlyOwner atStage(Stages.CREATION) {
         uint256 total = 0;
         for (uint256 i; i < _percents.length; i++) {
-            total += (_percents[i] / 1e2);
+            total += _percents[i];
         }
         require(total >= 99, "Invalid percents");
         currentDate.unitDispersion_ = _unit;
